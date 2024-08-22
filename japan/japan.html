@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>studio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../japan/japan.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-providers/leaflet-providers.js"></script>
+  <script defer src="../japan/japan.js"></script>
+</head>
+<body>
+  <h1>Japan 2024</h1>
+  <div id="calendar" class="calendar">
+    <h3>March 2024</h3>
+    <!-- Days of the week -->
+    <div>Sun</div>
+    <div>Mon</div>
+    <div>Tue</div>
+    <div>Wed</div>
+    <div>Thu</div>
+    <div>Fri</div>
+    <div>Sat</div>
+
+    <!-- Empty cells for days before March starts (March 1st is a Friday, so 5 blank days) -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!-- March dates (1st to 23rd) -->
+    <div class="day">1</div>
+    <div class="highlight">2</div>
+    <div class="highlight">3</div>
+    <div class="highlight">4</div>
+    <div class="highlight">5</div>
+    <div class="highlight">6</div>
+    <div class="highlight">7</div>
+    <div class="highlight">8</div>
+    <div class="highlight">9</div>
+    <div class="highlight">10</div>
+    <div class="highlight">11</div>
+    <div class="highlight">12</div>
+    <div class="highlight">13</div>
+    <div class="highlight">14</div>
+    <div class="highlight">15</div>
+    <div class="highlight">16</div>
+    <div class="highlight">17</div>
+    <div class="highlight">18</div>
+
+    <div class="day">19</div>
+    <div class="day">20</div>
+    <div class="day">21</div>
+    <div class="day">22</div>
+    <div class="day">23</div>
+
+  </div>
+  <div id="map"></div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+body {
+  font-family: 'Corbel', 'Verdana', 'Helvetica';
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #c4d2eb;
+}
