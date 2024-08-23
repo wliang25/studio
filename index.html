@@ -1,22 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>studio</title>
+  <title>Studio</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet-providers/leaflet-providers.js"></script>
   <link rel="stylesheet" href="index.css">
   <script defer src="index.js"></script>
 </head>
 <body>
-  <h1>Studio</h1>
-  <div id="japan"></div>
-  <script>
-    fetch('./japan/japan.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('japan').innerHTML = data;
-      })
-      .catch(err => console.error('Error loading content: ', error));
-  </script>
+  <h1>Projects</h1>
+  <div class="japan">
+    <h2>Japan 2024</h2>
+    <p>Earlier this year, I visited Japan for the first time with some friends, exploring the cities of Tokyo, Osaka, and Kyoto. 
+      To capture this adventure, I developed an interactive map using Leaflet.js. 
+      This personal project showcases the days we spent in each location, highlighting the landmarks and places we visited, 
+      offering a detailed and immersive visualization of our travel experience.<br /></p>
+    <div class="content">
+      <div class="calendar">
+        <h3>March 2024</h3>
+        <!-- Days of the week -->
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+
+        <!-- Empty cells for days before March starts (March 1st is a Friday, so 5 blank days) -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <!-- March dates (1st to 23rd) -->
+        <div class="day">1</div>
+        <div class="highlight">2</div>
+        <div class="highlight">3</div>
+        <div class="highlight">4</div>
+        <div class="highlight">5</div>
+        <div class="highlight">6</div>
+        <div class="highlight">7</div>
+        <div class="highlight">8</div>
+        <div class="highlight">9</div>
+        <div class="highlight">10</div>
+        <div class="highlight">11</div>
+        <div class="highlight">12</div>
+        <div class="highlight">13</div>
+        <div class="highlight">14</div>
+        <div class="highlight">15</div>
+        <div class="highlight">16</div>
+        <div class="highlight">17</div>
+        <div class="highlight">18</div>
+
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+      </div>
+      <div id="map"></div>       
+    </div>
+    <p>For future development I wish to categorize the places I visited in more detail. I also
+      hope to document reviews of restaurants and cafes that I've tried out. This could mean adding a search
+      and filter to each marker.
+    </p>
+  </div>
+
 </body>
 </html>
