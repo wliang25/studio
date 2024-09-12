@@ -1,4 +1,4 @@
-# Japan 2024 <br />
+# [Japan 2024](https://wliang25.github.io/studio/) <br />
 <br />
 Earlier this year, I embarked on a journey with friends to Japan, exploring the cities of Tokyo, Osaka, and Kyoto. 
 To capture the essence of this adventure, I developed an interactive map using Leaflet.js. 
